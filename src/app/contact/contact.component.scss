@@ -1,0 +1,62 @@
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.formulaire-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+mat-form-field {
+  width: 100%;
+  padding-top: 20px;
+}
+
+mat-card-actions {
+  justify-content: center;
+}
+
+.mat-mdc-card-header {
+  justify-content: center;
+}
+.titre {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.container-vide{
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  height: 50vh;
+}
+
+.container-image-erreur {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}

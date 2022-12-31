@@ -1,0 +1,40 @@
+.container-data, .container-vide{
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  height: 50vh;
+}
+
+.data {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.data-detail {
+  font-weight: bold;
+}
+
+.image-erreur {
+  width: 400px;
+  object-fit: cover;
+}
+
+.container-image-erreur, .texte-erreur {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}

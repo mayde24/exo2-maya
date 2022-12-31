@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.titre {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.film-container {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.film {
+  color: black;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+.film:hover {
+  transition: 0.5s;
+  color: darkviolet;
+}
+
+.film-detail-container {
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  height: 30vh;
+}
+
+.affiche-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-items: center;
+  align-content: center;
+}
+
+.affiche {
+  width: 200px;
+  object-fit: cover;
+}
+
+.titre-container {
+  color: darkviolet;
+  font-size: 40px;
+  text-align: center;
+}

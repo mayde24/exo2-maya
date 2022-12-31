@@ -1,0 +1,61 @@
+<!-- HEADER COMPONENT -->
+<app-header></app-header>
+
+<!-- GESTION COMPONENT -->
+
+<div class="container-data" *ngIf="personne.prenom != null">
+  <div class="data">
+    <div class="data-detail">
+      Prénom :
+    </div>
+    <div class="data-info">
+      {{ personne.prenom }}
+    </div>
+  </div>
+  <div class="data">
+    <div class="data-detail">
+      Nom :
+    </div>
+    <div class="data-info">
+      {{ personne.nom }}
+    </div>
+  </div>
+  <div class="data">
+    <div class="data-detail">
+      Age :
+    </div>
+    <div class="data-info">
+      {{ personne.age }}
+    </div>
+  </div>
+  <div class="data" *ngIf="personne.emailBool == false">
+    <div class="data-detail">
+      Email :
+    </div>
+    <div class="data-info">
+      {{ personne.email }}
+    </div>
+  </div>
+  <div class="data">
+    <div class="data-detail">
+      Commentaire :
+    </div>
+    <div class="data-info">
+      {{ personne.commentaire }}
+    </div>
+  </div>
+</div>
+
+<!-- Si aucune information à afficher -->
+<div class="container-vide" *ngIf="personne.prenom == null">
+  <div class="container-image-erreur">
+    <img src="../../assets/images/Erreur-404.webp" alt="" class="image-erreur">
+  </div>
+  <div class="texte-erreur">
+    Aucune information à afficher pour le moment.
+    Veuillez remplir le formulaire de contact.
+  </div>
+</div>
+
+<!-- FOOTER COMPONENT -->
+<app-footer></app-footer>

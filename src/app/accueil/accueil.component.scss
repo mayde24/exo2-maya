@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.meme {
+  justify-self: center;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 700px;
+}
+

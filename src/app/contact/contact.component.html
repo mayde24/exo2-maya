@@ -1,0 +1,67 @@
+<!-- HEADER COMPONENT -->
+<app-header></app-header>
+
+<!-- CONTACT COMPONENT -->
+
+<div class="container" *ngIf="!submitted">
+
+  <form [formGroup]="formulaire" class="formulaire-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Veuillez remplir le formulaire</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="full-width">
+              <mat-label>Prénom</mat-label>
+              <input matInput formControlName="prenom" matInput="" placeholder="Prénom" required>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field class="full-width">
+              <mat-label>Nom</mat-label>
+              <input matInput formControlName="nom" matInput="" placeholder="Nom" required>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="fill" floatLabel="always">
+              <mat-label>Age</mat-label>
+              <input formControlName="age" matInput type="number" class="example-right-align" placeholder="0">
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-checkbox matInput formControlName="emailBool" >Cacher l'adresse email</mat-checkbox>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="fill">
+              <mat-label>Entrez votre email</mat-label>
+              <input matInput formControlName="email" placeholder="pat@example.com" required>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field class="full-width">
+              <mat-label>Commentaire</mat-label>
+              <textarea formControlName="commentaire" matInput></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-card-content>
+
+      // Bouton OnSubmit()
+      <mat-card-actions>
+        <button (click)="onSubmit()" mat-raised-button color="primary">Envoyer</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</div>
+
+<div class="container-vide" *ngIf="submitted">
+  <div class="container-image-erreur">
+    <img src="../../assets/images/merci.webp" alt="" class="image-erreur">
+  </div>
+</div>
+
+<!-- FOOTER COMPONENT -->
+<app-footer></app-footer>

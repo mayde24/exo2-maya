@@ -1,0 +1,52 @@
+.header {
+  width: 100vw;
+  height: 10vh;
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  width: 60vw;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+  text-align: right;
+}
+
+.page {
+  font-size: 20px;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+.page:hover {
+  color: darkviolet;
+  transition: 0.5s;
+}

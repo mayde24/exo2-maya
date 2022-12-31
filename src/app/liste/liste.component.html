@@ -1,0 +1,42 @@
+<!-- HEADER COMPONENT -->
+<app-header></app-header>
+
+<!-- LISTE COMPONENT -->
+
+<div class="container">
+  <div class="titre">Ma selection de films</div>
+
+  <!-- Selection de films - liens -->
+  <div class="film-container">
+    <div class="film" (click)="movieToShow('Coraline', '../../assets/images/film1.jpg')">
+      Coraline
+    </div>
+    <div class="film" (click)="movieToShow('A Couteaux Tirés', '../../assets/images/film2.jpg')">
+      A couteaux tirés
+    </div>
+    <div class="film" (click)="movieToShow('L\'illusioniste', '../../assets/images/film3.jpg')">
+      L'illusionniste
+    </div>
+    <div class="film" (click)="movieToShow('Paprika', '../../assets/images/film4.jpg')">
+      Paprika
+    </div>
+    <div class="film" (click)="movieToShow('Les 3 frères', '../../assets/images/film5.jpg')">
+      Les 3 frères
+    </div>
+  </div>
+
+   <!-- Affichage au clique -->
+
+  <div class="film-detail-container">
+    <div class="titre-container" *ngIf="movieName != '' && moviePoster != ''">
+      {{movieName}}
+    </div>
+    <div class="affiche-container" *ngIf="movieName != '' && moviePoster != ''">
+      <img src="{{moviePoster}}" alt="" class="affiche">
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER COMPONENT -->
+<app-footer></app-footer>
